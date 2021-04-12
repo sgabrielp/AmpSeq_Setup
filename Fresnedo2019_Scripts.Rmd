@@ -2,33 +2,33 @@
 title: "AmpSec_FresnedoScripts2019"
 author: "SMGP"
 date: "4/7/2021"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 # Ampsec Scripts from Fresnedo 2019
-## Initial setup to run Singularity  
-Info obtained from https://github.com/JFresnedo/AmpSeq/blob/master/Preliminaries.md
+Info obtained and modified from https://github.com/JFresnedo/AmpSeq/blob/master/Preliminaries.md
 
-```{bash}
-ssh sgabriel@rhino.unl.edu
-```
+## 1. Initial Singularity and AmpSeq image Setup
+These steps are for initial Singularity AmpSeq Setup if you have already done this you can change to Step 2
 
 
-```{bash}
-pwd
-```
-
-
-```{bash}
+```{bash eval=FALSE, include=FALSE}
+#Change directory to a working directory
 cd $WORK
 
-# Creating a folder  
-mkdir AmpSec3
-cd AmpSec3
+# Creating a working folder  
+mkdir AmpSeq
+cd AmpSeq
+
+#Cloning repository (containing example and codes)
 git clone https://github.com/JFresnedo/AmpSeq.git
 
-#singularity won't load in working node so changing to a working node
+#singularity won't load in login node so changing to a working node
 srun --nodes=1 --ntasks-per-node=2 --mem-per-cpu=32g --time=2:00:00 --pty $SHELL
+
+#Loading Singularity on the HCC
 module load singularity/3.2
 
 #Pulling the container (info from the github and https://singularity-hub.org/collections/2392)
@@ -41,6 +41,6 @@ singularity shell AmpSeq.sif
 vcftools or etc
 ```
 
-## Running the examples
+## Executing AmpSeq and runing provided example
 Use the MD files from the github example
 
