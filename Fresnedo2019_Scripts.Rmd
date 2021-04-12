@@ -10,7 +10,7 @@ output: html_document
 ## Initial setup to run Singularity  
 Info obtained from https://github.com/JFresnedo/AmpSeq/blob/master/Preliminaries.md
 
-```{bash setup}
+```{bash}
 ssh sgabriel@rhino.unl.edu
 ```
 
