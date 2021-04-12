@@ -13,13 +13,13 @@ output: html_document
 ## Initial setup to run Singularity  
 Info obtained from https://github.com/JFresnedo/AmpSeq/blob/master/Preliminaries.md
 
-```{bash}
+```{bash setup}
 ssh sgabriel@rhino.unl.edu
 ```
 
-pwd
-```{bash}
 
+```{bash}
+pwd
 ```
 
 
