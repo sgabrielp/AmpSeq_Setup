@@ -5,12 +5,11 @@ date: "4/7/2021"
 output: html_document
 ---
 
-
 # Ampsec Scripts from Fresnedo 2019
 ## Initial setup to run Singularity  
 Info obtained from https://github.com/JFresnedo/AmpSeq/blob/master/Preliminaries.md
 
-```{bash setup}
+```{bash}
 ssh sgabriel@rhino.unl.edu
 ```
 
