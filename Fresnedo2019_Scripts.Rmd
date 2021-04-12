@@ -24,13 +24,13 @@ pwd
 ### Creating a working folder  
 
 
-```{bash}
-mkdir AmpSeq
+```{bash eval=FALSE, include=TRUE}
+ssh sgabriel@rhino.unl.edu
 ```
 
 
 ```{bash}
-cd AmpSeq
+cd AmpSeq1
 ```
 
 
