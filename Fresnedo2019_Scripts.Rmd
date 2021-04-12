@@ -1,0 +1,46 @@
+---
+title: "AmpSec_FresnedoScripts2019"
+author: "SMGP"
+date: "4/7/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+# knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Ampsec Scripts from Fresnedo 2019
+## Initial setup to run Singularity  
+Info obtained from https://github.com/JFresnedo/AmpSeq/blob/master/Preliminaries.md
+
+```{bash}
+ssh sgabriel@rhino.unl.edu
+```
+
+pwd
+
+```{bash}
+cd $WORK
+
+# Creating a folder  
+mkdir AmpSec3
+cd AmpSec3
+git clone https://github.com/JFresnedo/AmpSeq.git
+
+#singularity won't load in working node so changing to a working node
+srun --nodes=1 --ntasks-per-node=2 --mem-per-cpu=32g --time=2:00:00 --pty $SHELL
+module load singularity/3.2
+
+#Pulling the container (info from the github and https://singularity-hub.org/collections/2392)
+singularity pull --name AmpSeq.sif shub://JFresnedo/AmpSeq:ampseq
+# This will generatate the AmpSeq.sif 
+to load the container 
+singularity shell AmpSeq.sif
+
+#To test open 
+vcftools or etc
+```
+
+## Running the examples
+Use the MD files from the github example
+
