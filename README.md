@@ -16,15 +16,24 @@ singularity pull --name AmpSeq.sif shub://JFresnedo/AmpSeq:ampseq
 to load the container 
 singularity shell AmpSeq.sif
 
+
+
 #To test open 
 vcftools or etc
-<Code>XXXXXXX <Code>
 
 Log in your HPC service and change directory (cd) to the working directory
 
 Get the information from the AmpSeq GitHub repository by executing:
 
-pwd
+
+```{bash}
+pwd 
+```
+
+
+```bash
+ls -lah
+```
 
 ```bash
 git clone https://github.com/JFresnedo/AmpSeq.git
