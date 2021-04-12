@@ -3,8 +3,8 @@ title: "AmpSec_FresnedoScripts2019"
 author: "SMGP"
 date: "4/7/2021"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 # Ampsec Scripts from Fresnedo 2019
@@ -13,9 +13,7 @@ Info obtained and modified from https://github.com/JFresnedo/AmpSeq/blob/master/
 ## 1. Initial Singularity and AmpSeq image Setup
 These steps are for initial Singularity AmpSeq Setup if you have already done this you can change to Step 2
 
-
-```{bash eval=FALSE, include=FALSE}
-#Change directory to a working directory
+#kjhjk
 cd $WORK
 
 # Creating a working folder  
@@ -39,7 +37,7 @@ singularity shell AmpSeq.sif
 
 #To test open 
 vcftools or etc
-```
+
 
 ## Executing AmpSeq and runing provided example
 Use the MD files from the github example
