@@ -1,5 +1,5 @@
 ---
-title: "AmpSec_FresnedoScripts2019"
+title: "AmpSeq_FresnedoScripts2019"
 author: "SMGP"
 date: "4/7/2021"
 output:
@@ -11,19 +11,29 @@ output:
 Info obtained and modified from https://github.com/JFresnedo/AmpSeq/blob/master/Preliminaries.md
 
 ## 1. Initial Singularity and AmpSeq image Setup
-These steps are for initial Singularity AmpSeq Setup if you have already done this you can change to Step 2
+These steps are for initial Singularity AmpSeq Setup if you have already done this you skip and go to Step 2
 
 ```{bash}
 pwd
 ```
- pwd
-test
-#Changing directory to a workind directory 
+
+### Changing from home directory to work directory 
+
 <code>cd $WORK<code>
 
-# Creating a working folder  
+### Creating a working folder  
+
+
+```{bash}
 mkdir AmpSeq
+```
+
+
+```{bash}
 cd AmpSeq
+```
+
+
 
 #Cloning repository (containing example and codes)
 git clone https://github.com/JFresnedo/AmpSeq.git
@@ -44,6 +54,6 @@ singularity shell AmpSeq.sif
 vcftools or etc
 
 
-## Executing AmpSeq and runing provided example
+## 2. Executing AmpSeq and runing provided example
 Use the MD files from the github example
 
