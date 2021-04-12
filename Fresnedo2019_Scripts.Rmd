@@ -18,6 +18,10 @@ ssh sgabriel@rhino.unl.edu
 ```
 
 pwd
+```{bash}
+
+```
+
 
 ```{bash}
 cd $WORK
