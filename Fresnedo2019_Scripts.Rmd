@@ -13,8 +13,13 @@ Info obtained and modified from https://github.com/JFresnedo/AmpSeq/blob/master/
 ## 1. Initial Singularity and AmpSeq image Setup
 These steps are for initial Singularity AmpSeq Setup if you have already done this you can change to Step 2
 
+```{bash}
+pwd
+```
+ pwd
+test
 #Changing directory to a workind directory 
-cd $WORK
+<code>cd $WORK<code>
 
 # Creating a working folder  
 mkdir AmpSeq
