@@ -27,7 +27,10 @@ cd $WORK
 Verify you are in working directory
 ```{bash include=TRUE}
 pwd
+<<<<<<< HEAD
 ls -lah
+=======
+>>>>>>> a2e59ea95168bd4dad539e7bdcb86b0c5535150b
 ```
 
 Creating a working folder  
